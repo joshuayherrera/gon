@@ -9,10 +9,13 @@
   padding: 0 1rem;
 }
 
-.partners {
-  border-bottom: 1px solid #e5e7eb;
-  padding: 2rem 0;
-  margin-bottom: 4rem;
+.group19 {
+  display: flex;
+  width: 1800px;
+  height: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  
 }
 
 .logosContainer {
@@ -187,5 +190,10 @@
 
   .title {
     font-size: 2rem;
+  }
+
+  .group19 {
+    height: 220px;
+    margin-bottom: 4rem;
   }
 }

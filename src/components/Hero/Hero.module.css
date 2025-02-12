@@ -163,4 +163,11 @@
   .title {
     font-size: 4rem;
   }
+
+}
+
+@media (max-width: 768px) {
+  .featured {
+    margin-top: 2rem;
+  }
 }

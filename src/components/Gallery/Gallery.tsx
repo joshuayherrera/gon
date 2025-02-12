@@ -6,6 +6,7 @@ import gallery2 from '../../assets/gallery2.png'
 import gallery3 from '../../assets/gallery3.png'
 import gallery4 from '../../assets/gallery4.png'
 import gallery5 from '../../assets/gallery5.png'
+import group19 from '../../assets/Group 19.png'
 
 const images = [
   {
@@ -27,21 +28,6 @@ const images = [
   {
     url: gallery5,
     alt: 'Sesión fotográfica profesional'
-  }
-];
-
-const partnerLogos = [
-  {
-    url: '/logos/sbs.webp',
-    alt: 'SBS Librería Internacional'
-  },
-  {
-    url: '/logos/virrey.webp',
-    alt: 'El Virrey Librerías'
-  },
-  {
-    url: '/logos/ibero.webp',
-    alt: 'Ibero Librerías'
   }
 ];
 
@@ -78,17 +64,7 @@ export default function Gallery() {
   return (
     <section className={styles.gallery} ref={galleryRef}>
       <div className={styles.partners}>
-        <div className={`${styles.logosContainer} ${isIntersecting ? styles.visible : ''}`}>
-          {partnerLogos.map((logo, index) => (
-            <img
-              key={index}
-              src={logo.url}
-              alt={logo.alt}
-              className={styles.partnerLogo}
-              loading="lazy"
-            />
-          ))}
-        </div>
+        <img src={group19} alt="Group 19" className={styles.group19} />
       </div>
 
       <div className={styles.container}>
