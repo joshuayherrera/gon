@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 import hero from '../../assets/hero.png';
-
+import group18 from '../../assets/Group 18.png';
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -36,12 +36,17 @@ export default function Hero() {
       </div>
 
       <div className={styles.featured}>
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto">
           <h2 className={styles.featuredTitle}>
-            Destacada <span className="text-blue-500">en</span>
+            Destacada <span style={{ color: '#3b82f6' }}>en</span>
           </h2>
           <div className={styles.logos}>
-            {/* Add company logos here */}
+            <img 
+              src={group18}
+              alt="Empresas destacadas"
+              className={styles.featuredImage}
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
