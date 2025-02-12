@@ -1,3 +1,9 @@
+import gallery1 from '../assets/gallery1.png'
+import gallery2 from '../assets/gallery2.png'
+import gallery3 from '../assets/gallery3.png'
+import gallery4 from '../assets/gallery4.png'
+import gallery5 from '../assets/gallery5.png'
+
 export interface NavLink {
     href: string;
     label: string;
@@ -27,4 +33,27 @@ export const navLinks: NavLink[] = [
     { href: '#sobre-gl', label: 'Sobre GL' },
     { href: '#testimonios', label: 'Testimonios' },
     { href: '#galeria', label: 'Galería' }
+];
+
+export const images = [
+  {
+    url: gallery1,
+    alt: 'Presentación del libro en SBS'
+  },
+  {
+    url: gallery2,
+    alt: 'Evento corporativo Góngora Legal'
+  },
+  {
+    url: gallery3,
+    alt: 'Conferencia de negocios'
+  },
+  {
+    url: gallery4,
+    alt: 'Sesión fotográfica profesional'
+  },
+  {
+    url: gallery5,
+    alt: 'Sesión fotográfica profesional'
+  }
 ];
