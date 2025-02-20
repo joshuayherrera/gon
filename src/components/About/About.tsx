@@ -5,7 +5,7 @@ import book from '../../assets/book.png';
 
 export default function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id='about'>
       <div className={styles.teamSection}>
         <div className={styles.container}>
           <div className={styles.content}>
