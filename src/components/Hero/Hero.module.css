@@ -1,3 +1,5 @@
+/* Hero.module.css */
+
 .hero {
   min-height: 100vh;
   background-color: black;
@@ -11,8 +13,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Default to column for mobile */
   gap: 3rem;
 }
 
@@ -90,13 +92,15 @@
   opacity: 0;
   transform: translateX(20px);
   animation: fadeInRight 0.8s ease forwards 0.6s;
+  max-width: 50%; /* Ensure image doesn't exceed half width on desktop */
 }
 
 .image img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
-  transform: scaleX(-1);
+  object-fit: cover;
+  transform: rotate(-3deg); /* Image rotation - as requested */
 }
 
 .featured {
@@ -119,13 +123,15 @@
   align-items: center;
   gap: 3rem;
   opacity: 0.7;
+  margin-top: 2rem;
 }
 
 .logo {
-  height: 2rem;
+  height: 60px;
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  animation: fadeInScroll 1s ease forwards;
 }
 
 .logo:hover {
@@ -134,40 +140,60 @@
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
 
 @keyframes fadeInRight {
   from {
-    opacity: 0;
-    transform: translateX(20px);
+      opacity: 0;
+      transform: translateX(20px);
   }
   to {
-    opacity: 1;
-    transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
   }
 }
 
+@keyframes fadeInScroll {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Media Query for Desktop (min-width: 768px) */
 @media (min-width: 768px) {
   .container {
-    flex-direction: row;
-    align-items: center;
+      flex-direction: row; /*  **Crucial:** Change to row for desktop layout */
+      align-items: center;
+  }
+
+  .content {
+      max-width: 50%; /*  **Crucial:** Limit content width to half */
+  }
+
+  .image {
+      max-width: 50%; /*  **Crucial:** Limit image width to half */
+      padding-left: 2rem; /* Spacing between text and image */
   }
 
   .title {
-    font-size: 4rem;
+      font-size: 4rem; /*  Adjust font size for desktop if needed */
   }
-
 }
 
 @media (max-width: 768px) {
   .featured {
-    margin-top: 2rem;
+      margin-top: 2rem;
   }
 }

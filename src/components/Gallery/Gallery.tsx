@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from './Gallery.module.css';
-import group19 from '../../assets/Group 19.png'
 import { images } from '../../data/data'
 
 export default function Gallery() {
@@ -37,7 +36,7 @@ export default function Gallery() {
   return (
     <section className={styles.gallery} ref={galleryRef}>
       <div className={styles.partners}>
-        <img src={group19} alt="Group 19" className={styles.group19} />
+        <img src='{group19}' alt="Group 19" className={styles.group19} />
       </div>
 
       <div className={styles.container}>

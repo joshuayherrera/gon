@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
-import hero from '../../assets/hero.png';
-import group18 from '../../assets/Group 18.png';
+import hero from '../../assets/hero.jpg';
+
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -25,9 +25,9 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        
+
         <div className={styles.image}>
-          <img 
+          <img
             src={hero}
             alt="Abogada profesional"
             className="w-full h-auto rounded-lg"
@@ -41,11 +41,35 @@ export default function Hero() {
             Destacada <span style={{ color: '#3b82f6' }}>en</span>
           </h2>
           <div className={styles.logos}>
-            <img 
-              src={group18}
-              alt="Empresas destacadas"
-              className={styles.featuredImage}
-              loading="lazy"
+            <img
+              src="/src/assets/destacadas/destacada1.jpg"
+              alt="gestión"
+              className={styles.logo}
+            />
+            <img
+              src="/src/assets/destacadas/destacada2.png"
+              alt="tv peru"
+              className={styles.logo}
+            />
+            <img
+              src="/src/assets/destacadas/destacada3.png"
+              alt="exitosa"
+              className={styles.logo}
+            />
+            <img
+              src="/src/assets/destacadas/destacada4.jpg"
+              alt="planeta"
+              className={styles.logo}
+            />
+            <img
+              src="/src/assets/destacadas/destacada5.jpg"
+              alt="nativa"
+              className={styles.logo}
+            />
+            <img
+              src="/src/assets/destacadas/destacada6.jpg"
+              alt="placeres"
+              className={styles.logo}
             />
           </div>
         </div>
